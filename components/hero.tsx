@@ -23,14 +23,14 @@ function Hero() {
             <h1 className='text-4xl max-lg:text-white max-lg:text-3xl max-lg:max-w-xl max-lg:leading-16 max-sm:leading-10 max-sm:text-[20px] max-sm:max-w-md font-bold  text-gray-800 leading-12'>Agence Web à <span className='text-mainColor'> <div className='bg-white inline-block px-1 -rotate-3 ' > Marrakech</div></span> Création de Sites, Référencement & Solutions Digitales</h1>
             <p className='text-md max-sm:text-xs text-gray-500  max-lg:text-white  '>Boostez votre présence en ligne avec notre expertise digitale.</p>
             <div className='flex space-x-4 max-lg:text-sm max-sm:text-xs max-[320px]:flex-col max-[320px]:justify-center max-[320px]:space-x-0 max-[320px]:space-y-2'>
-                <Link href={"#"} className='bg-mainColor inline-block text-white px-3 py-2 rounded-md hover:bg-mainColor/70 transition-all '>
+                <Link href="/contact" className='bg-mainColor inline-block text-white px-3 py-2 rounded-md hover:bg-mainColor/70 transition-all '>
                     <div className='flex items-center space-x-3'>
                         <IoMail />
                         <p>Contact Nous</p>
                     </div>  
                 </Link>
 
-                <Link href={"#"} className='bg-pink-700 inline-block text-white px-3 py-2 rounded-md hover:bg-pink-700/70 transition-all '>
+                <Link href="nos-services" className='bg-pink-700 inline-block text-white px-3 py-2 rounded-md hover:bg-pink-700/70 transition-all '>
                     <div className='flex items-center space-x-3'>
                         <FaClipboardList />
                         <p>Nos Services</p>
