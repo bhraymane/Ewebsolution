@@ -25,7 +25,7 @@ function whyus() {
             <span className='bg-mainColor px-3 py-1 text-sm rounded-md font-medium text-white'>Pourquoi nous</span>
             <h2 className='text-4xl font-semibold mt-6  max-sm:text-xl'>Pourquoi vous allez choisir de collaborer avec nous</h2>
             <p className='text-gray-700 mt-8 max-sm:mt-1 text-justify max-sm:text-sm '>Nos développeurs, nos infographistes, et nos webmasters sont formés aux dernières technologies du développement sur-mesure, ce qui permet l’optimisation informatique de vos flux de données et d'un goût de charte graphique. Nous pouvons réaliser une passerelle informatique, un formulaire de saisie, un tableau de bord informatique ou toute autre application métier ou application sur-mesure. </p>
-            <Link href="/nos-service" className='bg-mainColor mt-6 inline-block text-white max-sm:text-xs px-3 py-2 rounded-md hover:bg-mainColor/70 transition-all '>               
+            <Link href="/nos-services" className='bg-mainColor mt-6 inline-block text-white max-sm:text-xs px-3 py-2 rounded-md hover:bg-mainColor/70 transition-all '>               
                     <p>En savoir plus</p>
                  
             </Link>
