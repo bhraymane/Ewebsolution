@@ -1,16 +1,29 @@
-
+"use client"
 import React from 'react'
 import { clientList } from '@/constants/data'
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfStroke } from "react-icons/fa6";
 import Image from 'next/image'
 import Slide from '@/components/slide'
+import {motion} from "framer-motion"
 
 function avisclient() {
 
 
   return (
-    <div className='h-full flex flex-col justify-center px-6 py-10  bg-mainColor/5 '>
+    <motion.div 
+    initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{
+            duration:1,
+            delay:0.6,
+            type:'keyframes'
+        }}
+        viewport={{
+            once:true,
+        }}
+    
+    className='h-full flex flex-col justify-center px-6 py-10  bg-mainColor/5 '>
         <div className='flex flex-col items-center'>
             <div>
                 <span className='bg-mainColor px-3 py-1 text-sm rounded-md font-medium text-white'>Avis des Clients</span>
@@ -43,7 +56,7 @@ function avisclient() {
                 ))}
             </div> */}
             
-        </div>
+        </motion.div>
   )
 }
 
