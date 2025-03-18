@@ -40,7 +40,7 @@ export const navLinks = [{
 export const serviceList = [{
     icon: React.createElement(FaChalkboardTeacher, null),
     title: "Formation & conseil",
-    url: '/formation',
+    url: '/formations',
     description: "Nous vous conseillons pour optimiser vos site Internet, vos applications Web ou Mobile. Nous auditons votre site actuel pour améliorer le référencement SEO. Nous apportons également tous les conseils nécéssaires pour votre communication (identité graphique, site, application Web)."
 },{
     icon: React.createElement(TbSeo, null),
