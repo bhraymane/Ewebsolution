@@ -14,6 +14,10 @@ function Navbar() {
   const [menu,setMenu]=useState(false);
 
   useEffect(()=>{
+    if(menu) document.body.classList.add('overflow-hidden')
+    else document.body.classList.remove('overflow-hidden')
+  },[menu])
+  useEffect(()=>{
     const handlder=()=>{
       if(window.scrollY>90){
         setNavbg(true)
@@ -27,7 +31,7 @@ function Navbar() {
 
   return (
     <div 
-    className={`max-w-screen-xl mx-auto sticky top-0 z-50 bg-white/70 backdrop-filter backdrop-blur-lg ${navBg ? "shadow-md transition-shadow ":""}  ` }>
+    className={`max-w-screen-xl  mx-auto sticky top-0 z-50 bg-white/70 backdrop-filter backdrop-blur-lg ${navBg ? "shadow-md transition-shadow ":""}  ` }>
       <nav className="flex items-center justify-between flex-wrap max-sm:py-2  px-6 py-4">
         <Link href={"/"} className="flex items-center flex-shrink-0 text-black mr-6 space-x-2"> 
             <Image src={logo} alt='logo' width={25}  />            
@@ -49,7 +53,7 @@ function Navbar() {
           </div>       
         </div>
 
-        <div className="block lg:hidden">
+        <div className="block lg:hidden ">
           <button aria-label='open-menu' onClick={()=>setMenu(!menu)} id="nav" className="flex items-center px-3 py-2 border rounded text-[#0C7EF9] border-[#0C7EF9] hover:text-gray-700 hover:border-gray-700">
             <IoMenu />
           </button>
