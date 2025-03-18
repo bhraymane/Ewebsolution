@@ -61,7 +61,7 @@ function Navbar() {
               </button>
               <div className='flex flex-col justify-center space-y-4 p-4  '> 
               {navLinks.map((link,index)=>(
-                <Link href={link.url} key={index} className={`flex items-center gap-1.5 w-full mx-0 text-white bg-white/15 backdrop-filter backdrop-blur-xl h-full py-2 px-4 rounded-lg `}>
+                <Link href={link.url} key={index} onClick={()=>setMenu(!menu)} className={`flex items-center gap-1.5 w-full mx-0 text-white bg-white/15 backdrop-filter backdrop-blur-xl h-full py-2 px-4 rounded-lg `}>
                 {link.icon}
                 {link.title}
               </Link>
